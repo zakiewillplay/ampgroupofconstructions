@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="AMP Group Portfolio - Construction, Interior, and Commercial projects in Srinagar.">
+  <title>Portfolio | AMP Group of Constructions</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;900&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="Css/stylesAmp.css">
+</head>
+<body>
+
+  <div id="preloader">
+    <div class="spinner"></div>
+  </div>
+
+  <nav>
+    <div class="nav-container">
+      <a href="indexAmp.html" class="logo">
+        <div class="logo-icon">AMP</div>
+        <div class="logo-text">
+          AMP Group
+          <small>of Constructions</small>
+        </div>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="indexAmp.html">Home</a></li>
+        <li><a href="aboutAmp.html">About</a></li>
+        <li><a href="servicesAmp.html">Services</a></li>
+        <li><a href="portfolioAmp.html">Portfolio</a></li>
+        <li><a href="TestimonialsAmp.html">Testimonials</a></li>
+        <li><a href="contactAmp.html">Contact</a></li>
+      </ul>
+      <div class="hamburger" id="hamburger">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </nav>
+
+  <section class="main-content-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Our Work</span>
+        <h2>Project Portfolio</h2>
+        <p>9 premium projects showcasing our expertise across residential and commercial sectors.</p>
+      </div>
+
+      <div class="portfolio-filter">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="exterior">Exteriors</button>
+        <button class="filter-btn" data-filter="interior">Interiors</button>
+        <button class="filter-btn" data-filter="commercial">Commercial</button>
+      </div>
+
+      <div class="portfolio-grid reveal">
+        <div class="portfolio-item" data-category="exterior">
+          <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=600&h=450&fit=crop" alt="Modern Facade Project" onerror="this.src='https://placehold.co/600x450/1a1a1a/c9a84c?text=Modern+Facade'">
+          <div class="portfolio-overlay">
+            <h4>Modern Facade</h4>
+            <span>Exterior Residential</span>
+          </div>
+        </div>
+        <div class="portfolio-item" data-category="exterior">
+          <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=600&h=450&fit=crop" alt="Brick & Wood Project" onerror="this.src='https://placehold.co/600x450/1a1a1a/c9a84c?text=Brick+%26+Wood'">
+          <div class="portfolio-overlay">
+            <h4>Brick & Wood</h4>
+            <span>Exterior Residential</span>
+          </div>
+        </div>
+        <div class="portfolio-item" data-category="exterior">
+          <img src="https://images.unsplash.com/photo-1600573472550-8090b5e0745e?w=600&h=450&fit=crop" alt="Grey Gable Project" onerror="this.src='https://placehold.co/600x450/1a1a1a/c9a84c?text=Grey+Gable'">
+          <div class="portfolio-overlay">
+            <h4>Grey Gable</h4>
+            <span>Exterior Residential</span>
+          </div>
+        </div>
+        <div class="portfolio-item" data-category="exterior">
+          <img src="https://images.unsplash.com/photo-1600566753086-00f18f6e3bf9?w=600&h=450&fit=crop" alt="Ornate Villa Project" onerror="this.src='https://placehold.co/600x450/1a1a1a/c9a84c?text=Ornate+Villa'">
+          <div class="portfolio-overlay">
+            <h4>Ornate Villa</h4>
+            <span>Exterior Residential</span>
+          </div>
+        </div>
+        <div class="portfolio-item" data-category="exterior">
+          <img src="https://images.unsplash.com/photo-1600585154526-990dced4db0d?w=600&h=450&fit=crop" alt="Yellow Trim House" onerror="this.src='https://placehold.co/600x450/1a1a1a/c9a84c?text=Yellow+Trim+House'">
+          <div class="portfolio-overlay">
+            <h4>Yellow Trim House</h4>
+            <span>Exterior Residential</span>
+          </div>
+        </div>
+        <div class="portfolio-item" data-category="exterior">
+          <img src="https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?w=600&h=450&fit=crop" alt="Dark Textured Modern" onerror="this.src='https://placehold.co/600x450/1a1a1a/c9a84c?text=Dark+Textured+Modern'">
+          <div class="portfolio-overlay">
+            <h4>Dark Textured Modern</h4>
+            <span>Exterior Residential</span>
+          </div>
+        </div>
+
+        <div class="portfolio-item" data-category="interior">
+          <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=600&h=450&fit=crop" alt="Luxury Residence Interiors" onerror="this.src='https://placehold.co/600x450/1a1a1a/c9a84c?text=Luxury+Residence+Interiors'">
+          <div class="portfolio-overlay">
+            <h4>Luxury Residence Interiors</h4>
+            <span>Interior Design</span>
+          </div>
+        </div>
+        <div class="portfolio-item" data-category="interior">
+          <img src="https://images.unsplash.com/photo-1600210491892-03d54c0aaf87?w=600&h=450&fit=crop" alt="Custom Wardrobes & Vanity" onerror="this.src='https://placehold.co/600x450/1a1a1a/c9a84c?text=Custom+Wardrobes+%26+Vanity'">
+          <div class="portfolio-overlay">
+            <h4>Custom Wardrobes & Vanity</h4>
+            <span>Interior Design</span>
+          </div>
+        </div>
+
+        <div class="portfolio-item" data-category="commercial">
+          <img src="https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?w=600&h=450&fit=crop" alt="Al Aflaj Polyclinic & Diagnostic Centre" onerror="this.src='https://placehold.co/600x450/1a1a1a/c9a84c?text=Al+Aflaj+Polyclinic'">
+          <div class="portfolio-overlay">
+            <h4>Al Aflaj Polyclinic</h4>
+            <span>Commercial Renovation</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="lightbox" id="lightbox">
+    <span class="lightbox-close" id="lightboxClose">×</span>
+    <img src="" alt="" id="lightboxImg">
+    <div class="lightbox-caption" id="lightboxCaption"></div>
+  </div>
+
+  <footer>
+    <div class="footer-grid">
+      <div class="footer-col">
+        <h4>AMP Group</h4>
+        <p>Building Dreams Into Reality. Premium construction, interior design, and real estate services in Srinagar, J&K.</p>
+        <div class="social-links">
+          <a href="https://www.instagram.com/ampgroupofconstructions" target="_blank" aria-label="Visit our Instagram Profile">
+            <span role="img" aria-label="Instagram Icon">📷</span>
+          </a>
+          <a href="https://wa.me/917889321153" target="_blank" aria-label="Chat with us on WhatsApp">
+            <span role="img" aria-label="WhatsApp Icon">💬</span>
+          </a>
+          <a href="mailto:ampgroupofconstructions@gmail.com" aria-label="Send us an Email">
+            <span role="img" aria-label="Email Icon">✉️</span>
+          </a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <a href="indexAmp.html">Home</a>
+        <a href="aboutAmp.html">About Us</a>
+        <a href="servicesAmp.html">Services</a>
+        <a href="portfolioAmp.html">Portfolio</a>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <a href="servicesAmp.html">Construction</a>
+        <a href="servicesAmp.html">Interior Design</a>
+        <a href="servicesAmp.html">Real Estate</a>
+        <a href="contactAmp.html">Consultation</a>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <p>📍 90 Feet Road, Soura, Srinagar – 190011</p>
+        <p>📞 +91 78893 21153</p>
+        <p>✉️ ampgroupofconstructions@gmail.com</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© <span id="runtime-year">2026</span> AMP Group of Constructions. All Rights Reserved. | Designed with ❤️ in Srinagar</p>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/917889321153?text=Hello%20AMP%20Group!%20I%27m%20interested%20in%20your%20services." class="whatsapp-float" target="_blank" title="Chat on WhatsApp" aria-label="Chat with us on WhatsApp">
+    <span role="img" aria-label="WhatsApp">💬</span>
+  </a>
+  
+  <button class="chatbot-toggle" id="chatbotToggle" title="Chat with us" aria-label="Open Chatbot">
+    <span role="img" aria-label="Robot">🤖</span>
+  </button>
+  
+  <div class="chatbot-panel" id="chatbotPanel">
+    <div class="chatbot-header">
+      <span>AMP Assistant</span>
+      <button id="chatbotClose" aria-label="Close Chat">✕</button>
+    </div>
+    <div class="chatbot-messages" id="chatbotMessages"></div>
+    <div class="chatbot-input-area">
+      <input type="text" id="chatbotInput" placeholder="Type your question..." aria-label="Chatbot Input">
+      <button id="chatbotSend" aria-label="Send Message">➤</button>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="Jss/scriptAmp.js"></script>
+</body>
+</html>
