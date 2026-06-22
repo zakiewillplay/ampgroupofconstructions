@@ -1,10 +1,19 @@
-// ===== Preloader =====
-window.addEventListener('load', () => {
+// ===== Preloader - Instant Hide =====
+// Hide preloader as soon as DOM is ready
+document.addEventListener('DOMContentLoaded', function() {
   const preloader = document.getElementById('preloader');
   if (preloader) {
-    setTimeout(() => {
-      preloader.classList.add('fade-out');
-    }, 800);
+    preloader.style.display = 'none';
+    preloader.style.opacity = '0';
+    preloader.style.pointerEvents = 'none';
+  }
+});
+
+// Fallback: hide on load in case DOMContentLoaded fires late
+window.addEventListener('load', function() {
+  const preloader = document.getElementById('preloader');
+  if (preloader && preloader.style.display !== 'none') {
+    preloader.style.display = 'none';
   }
 });
 
@@ -54,7 +63,6 @@ if (typeof gsap !== 'undefined') {
   if (document.querySelector('.hero')) {
     const heroTl = gsap.timeline({ delay: 0.8 });
     
-    // BUG FIX: Removed the "nav" animation so the header stops disappearing on mobile
     heroTl.from(".hero-badge", { y: 20, opacity: 0, duration: 0.6, ease: "power2.out" })
           .from(".hero h1", { y: 30, opacity: 0, duration: 0.8, ease: "power3.out" }, "-=0.4")
           .from(".tagline", { y: 20, opacity: 0, duration: 0.6, ease: "power2.out" }, "-=0.6")
